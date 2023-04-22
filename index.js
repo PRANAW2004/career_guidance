@@ -109,10 +109,10 @@ app.post("/contact",(req,res)=>{
     }
     const data1 = JSON.stringify(data);
     console.log(data1);
-    const url = "https://us21.api.mailchimp.com/3.0/lists/b2c3efcd25"
+    const url = ""
     const options = {
         method: "POST",
-        auth:"Pranaw:8c4bea474ba1a365ed3e28331c7e18a3-us21"
+        auth:""
     }
     const request = http.request(url, options, (response)=>{
         var responseCode = response.statusCode;
