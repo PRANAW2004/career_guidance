@@ -1,0 +1,37 @@
+<%- include("partials/header") -%>
+<br><br><br><br>
+<div>
+<form action="career/add" method="get" style="align-items: left;">
+    <h1>Courses</h1>
+    <button class="career-add btn btn-lg btn-primary" type="submit">Add Domain</button>
+</form>
+</div>
+<div class="row">
+    <% for(var i=0;i<careerimg.length;i++){ %>
+    <div class="col-lg-4 col-md-6" onclick="location.href='career/<%= imgpara[i] %>'">
+        <div class="card" style="cursor:pointer">
+            <div class="card-header img1">
+                <img src="images/<%= careerimg[i] %>" alt="ai-image">
+            </div>
+            <div class="card-body body1">
+                <h2 style="text-align: center;"><%= imgpara[i] %></h2>
+            </div>
+        </div>
+    </div>
+    <% } %>  
+    <% for(var i=0; i<careerName.length;i++){ %>
+        <div class="col-lg-4 col-md-6" onclick="location.href='career/<%= careerName[i] %>'">
+            <div class="card" style="cursor:pointer">
+            <div class="card-header ">
+                <h2 style="text-align: center;"><%= careerName[i] %></h2>
+            </div>
+            <div class="card-body">
+                <h4 style="text-align: center;"><%= smallOutline[i] %></h4>
+            </div>
+            </div>
+            
+        </div>
+    <% } %>
+    
+</div>
+<p></p>

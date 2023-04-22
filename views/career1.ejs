@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+<br><br><br>
+<div class="container">
+<h1><%= imgTitle %></h1>
+<% console.log(descpara.length) %>
+<div class="container">
+<% for(var i=0;i<descpara.length-1; i++){ %>
+    <ul>
+        <li><%= descpara[i]+"."%></li>
+    </ul>
+<% } %>
+<div class="contaier" style = "text-align:center;margin-bottom: 1rem;">
+<a href="<%= link %>"><button class="btn btn-primary">Go to free course</button></a>
+</div>
+</div>
+</div>

@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+<br><br><br>
+<div class="container">
+<h1><%= imgTitle %> by <%= personName1 %></h1>
+<% console.log(domaindesc[0]) %>
+<div class="container">
+<% for(var i=0;i<domaindesc.length;i++){ %>
+    <ul>
+        <li><%= domaindesc[i] %></li>
+    </ul>
+<% } %>
+</div>
+</div>

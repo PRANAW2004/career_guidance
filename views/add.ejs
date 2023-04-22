@@ -1,0 +1,20 @@
+<%- include("partials/header") -%>
+<br><br><br>
+<div class="container">
+<h1>Add a domain and publish.</h1>
+
+<form action="/add" method="post">
+    <h2>Domain Name</h2>
+    <input type="text" name="DomainName" required>
+    <h2>Your Name:</h2>
+    <input type="text" name="YourName" required>
+    <h2>Outline of the Domain</h2>
+    <input type="text" name="outline" required>
+    <h2>Link to any source</h2>
+    <input type="text">
+    <h2>Description</h2>
+    <textarea name="DescriptionName" required></textarea><br>
+    
+    <button type="submit" class="btn btn-primary btn-md">Publish</button>
+</form>
+</div>
